@@ -1,0 +1,44 @@
+/* Global reset */
+/* Based upon 'reset.css' in the Yahoo! User Interface Library: http://developer.yahoo.com/yui */
+	*, html, body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, label, fieldset, input, p, blockquote, th, td{margin:0; padding:0}
+	table{border-collapse:collapse; border-spacing:0}
+	fieldset, img{border:0}
+	address, caption, cite, code, dfn, em, strong, th, var{font-style:normal; font-weight:normal}
+	ol, ul, li{list-style:none}
+	caption, th{text-align:left}
+	h1, h2, h3, h4, h5, h6{font-size:100%; font-weight:normal}
+	q:before, q:after { content:''}
+
+/* Global reset-RESET */
+/* The below restores some sensible defaults */
+	strong{font-weight:bold}
+	em{font-style:italic}
+	a img{border:none} /* Gets rid of IE's blue borders */
+                           
+/* ----------
+  Site Styes
+/* ----------
+                             
+/* stock presentation items */
+	.clear{clear:both;}
+	
+/* typography */
+	body{font-family:Univers, Arial, Helvetica, sans-serif; font-size:11px;}	
+	
+/* stock styles on site */
+	/* headings */
+		h1{font-weight:bold; font-size:1.8em;}
+		h2{font-weight:bold; font-size:1.6em;}
+		h3{font-weight:bold; font-size:1.4em;}
+		h4{font-size:1.2em;}
+
+body{background:url(../images/bg-slice.png) repeat-x #320a11; width:960px; padding:10px; margin:0 auto;}
+
+/* header */
+	#header h2{color:#000; font-size:2em; margin:10px 0 0 0;}
+
+/* content */
+	#content{margin:40px 0;}
+		#content .user{padding:10px; background:#FFF; -moz-border-radius:5px; -webkit-border-radius:5px; clear:both; border:1px solid #6e1b29;}
+		#content .book-owner{float:left; width:220px; font-size:1.8em;}
+		#content .books-owned{float:right; width:690px; font-size:1.2em; border-left:1px solid #6e1b29; padding:0 10px;}
