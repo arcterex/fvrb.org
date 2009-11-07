@@ -1,2 +1,4 @@
 log/development.log
 db/development.sqlite3
+*.kpf
+.DS_Store
