@@ -8,6 +8,14 @@
     <%=h @member.contact %>
   </p>
 
+<p>
+  <b>Books:</b>
+  <ul>
+  <% @member.books.each do |b| %>
+    <li><%=h b.title %>
+  <% end %>
+  </ul>
+</p>
 
   <%= link_to 'Edit', edit_member_path(@member) %> |
   <%= link_to 'Back', members_path %>

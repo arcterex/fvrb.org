@@ -1,27 +1,27 @@
-  <h1>New book</h1>
+<h1>New book</h1>
 
-  <% form_for(@book) do |f| %>
-    <%= f.error_messages %>
+<% form_for(@book) do |f| %>
+  <%= f.error_messages %>
 
-    <p class="field">
-      <%= f.label :title %><br />
-      <%= f.text_field :title %>
-    </p>
-    <p class="field">
-      <%= f.label :description %><br />
-      <%= f.text_area :description %>
-    </p>
-    <p class="field">
-      <%= f.label :loaned %><br />
-      <%= f.check_box :loaned %>
-    </p>
-    <p class="field">
-      <%= f.label :member_id %><br />
-      <%= f.text_field :member_id %>
-    </p>
-    <p class="submit">
-      <%= f.submit 'Create' %>
-    </p>
-  <% end %>
+  <p class="field">
+    <%= f.label :title %><br />
+    <%= f.text_field :title %>
+  </p>
+  <p class="field">
+    <%= f.label :description %><br />
+    <%= f.text_area :description %>
+  </p>
+  <p class="field">
+    <%= f.label :loaned %><br />
+    <%= f.check_box :loaned %>
+  </p>
+  <p>
+    <%= f.label :member_id %><br />
+    <%= f.select :member_id, Member.all.collect { |m| [m.name,m.id] }, { :include_blank => true } %>
+  </p>
+  <p class="submit">
+    <%= f.submit 'Create' %>
+  </p>
+<% end %>
 
-  <%= link_to 'Back', books_path %>
+<%= link_to 'Back', books_path %>

@@ -25,7 +25,8 @@ class BooksController < ApplicationController
   # GET /books/new.xml
   def new
     @book = Book.new
-
+    @members = Member.find(:all)
+    
     respond_to do |format|
       format.html # new.html.erb
       format.xml  { render :xml => @book }
@@ -35,6 +36,7 @@ class BooksController < ApplicationController
   # GET /books/1/edit
   def edit
     @book = Book.find(params[:id])
+    @members = Member.find(:all)
   end
 
   # POST /books
