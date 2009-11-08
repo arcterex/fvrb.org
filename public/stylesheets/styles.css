@@ -46,7 +46,6 @@ a{padding:2px;}
                 
 /* forms */
 
-    form input, form textarea{width:300px; -moz-border-radius:5px; -webkit-border-radius:5px; border-radius:5px;}
+    form .field input, form .field textarea{width:300px; -moz-border-radius:5px; -webkit-border-radius:5px; border-radius:5px;}
     form .field input:hover, form .field input:active, form .field input:focus, form .field textarea:focus, form .field textarea:active, form .field textarea:hover{background:#DFE5E5;}
     form .submit input{margin:5px 0; padding:2px; border:1px solid #999; -moz-border-radius:5px; -webkit-border-radius:5px; border-radius:5px;}
-    form .submit input:hover{}
