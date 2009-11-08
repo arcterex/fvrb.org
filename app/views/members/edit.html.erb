@@ -1,20 +1,24 @@
-<h1>Editing member</h1>
+<div id="content">
+  
+  <h1>Editing member</h1>
 
-<% form_for(@member) do |f| %>
-  <%= f.error_messages %>
+  <% form_for(@member) do |f| %>
+    <%= f.error_messages %>
 
-  <p>
-    <%= f.label :name %><br />
-    <%= f.text_field :name %>
-  </p>
-  <p>
-    <%= f.label :contact %><br />
-    <%= f.text_field :contact %>
-  </p>
-  <p>
-    <%= f.submit 'Update' %>
-  </p>
-<% end %>
+    <p>
+      <%= f.label :name %><br />
+      <%= f.text_field :name %>
+    </p>
+    <p>
+      <%= f.label :contact %><br />
+      <%= f.text_field :contact %>
+    </p>
+    <p>
+      <%= f.submit 'Update' %>
+    </p>
+  <% end %>
 
-<%= link_to 'Show', @member %> |
-<%= link_to 'Back', members_path %>
+  <%= link_to 'Show', @member %> |
+  <%= link_to 'Back', members_path %>
+  
+</div><!-- end div id="content" -->

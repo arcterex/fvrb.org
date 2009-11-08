@@ -1,13 +1,17 @@
-<p>
-  <b>Name:</b>
-  <%=h @member.name %>
-</p>
+<div id="content">
+  
+  <p>
+    <b>Name:</b>
+    <%=h @member.name %>
+  </p>
 
-<p>
-  <b>Contact:</b>
-  <%=h @member.contact %>
-</p>
+  <p>
+    <b>Contact:</b>
+    <%=h @member.contact %>
+  </p>
 
 
-<%= link_to 'Edit', edit_member_path(@member) %> |
-<%= link_to 'Back', members_path %>
+  <%= link_to 'Edit', edit_member_path(@member) %> |
+  <%= link_to 'Back', members_path %>
+
+</div><!-- /#content -->
