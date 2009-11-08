@@ -35,7 +35,7 @@
 body{background:url(../images/bg-slice.png) repeat-x #320a11; width:960px; padding:10px; margin:0 auto;}
 
 /* header */
-	#header h2{color:#000; font-size:2em; margin:10px 0 0 0;}
+	#header h2{color:#000; font-size:2em; margin:20px 0 0 0;}
 
 /* content */
 	#content{margin:40px 0; background:#FFF; padding:10px;}
