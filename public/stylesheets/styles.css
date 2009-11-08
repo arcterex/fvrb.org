@@ -33,6 +33,7 @@
 		h4{font-size:1.2em;}
 
 body{background:url(../images/bg-slice.png) repeat-x #320a11; width:960px; padding:10px; margin:0 auto;}
+a{padding:2px;}
 
 /* header */
 	#header h2{color:#000; font-size:2em; margin:20px 0 0 0;}
@@ -42,3 +43,7 @@ body{background:url(../images/bg-slice.png) repeat-x #320a11; width:960px; paddi
 		#content .user{padding:10px; -moz-border-radius:5px; -webkit-border-radius:5px; border:1px solid #6e1b29;}
 		#content .book-owner{float:left; width:200px; font-size:1.8em;}
 		#content .books-owned{float:right; width:690px; font-size:1.2em; border-left:1px solid #6e1b29; padding:0 10px;}
+                
+/* forms */
+
+    form input:hover, form input:active, form input:focus{background:#DFE5E5;}
