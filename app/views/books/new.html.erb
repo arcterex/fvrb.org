@@ -3,19 +3,19 @@
   <% form_for(@book) do |f| %>
     <%= f.error_messages %>
 
-    <p>
+    <p class="field">
       <%= f.label :title %><br />
       <%= f.text_field :title %>
     </p>
-    <p>
+    <p class="field">
       <%= f.label :description %><br />
       <%= f.text_area :description %>
     </p>
-    <p>
+    <p class="field">
       <%= f.label :loaned %><br />
       <%= f.check_box :loaned %>
     </p>
-    <p>
+    <p class="submit">
       <%= f.submit 'Create' %>
     </p>
   <% end %>
