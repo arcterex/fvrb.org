@@ -38,7 +38,7 @@ body{background:url(../images/bg-slice.png) repeat-x #320a11; width:960px; paddi
 	#header h2{color:#000; font-size:2em; margin:10px 0 0 0;}
 
 /* content */
-	#content{margin:40px 0;}
-		#content .user{padding:10px; background:#FFF; -moz-border-radius:5px; -webkit-border-radius:5px; clear:both; border:1px solid #6e1b29;}
+	#content{margin:40px 0; background:#FFF; padding:10px;}
+		#content .user{padding:10px; -moz-border-radius:5px; -webkit-border-radius:5px; border:1px solid #6e1b29;}
 		#content .book-owner{float:left; width:220px; font-size:1.8em;}
 		#content .books-owned{float:right; width:690px; font-size:1.2em; border-left:1px solid #6e1b29; padding:0 10px;}
