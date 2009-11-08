@@ -3,15 +3,15 @@
   <% form_for(@member) do |f| %>
     <%= f.error_messages %>
 
-    <p>
+    <p class="field">
       <%= f.label :name %><br />
       <%= f.text_field :name %>
     </p>
-    <p>
+    <p class="field">
       <%= f.label :contact %><br />
       <%= f.text_field :contact %>
     </p>
-    <p>
+    <p class="submit">
       <%= f.submit 'Create' %>
     </p>
   <% end %>

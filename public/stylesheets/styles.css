@@ -46,4 +46,7 @@ a{padding:2px;}
                 
 /* forms */
 
-    form input:hover, form input:active, form input:focus{background:#DFE5E5;}
+    form input{-moz-border-radius:5px; -webkit-border-radius:5px; border-radius:5px;}
+    form .field input:hover, form .field input:active, form input .field:focus{background:#DFE5E5;}
+    form .submit input{margin:5px 0; padding:2px; border:1px solid #999; -moz-border-radius:5px; -webkit-border-radius:5px; border-radius:5px;}
+    form .submit input:hover{}
