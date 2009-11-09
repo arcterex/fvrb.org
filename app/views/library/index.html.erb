@@ -1,0 +1,33 @@
+  <h1>Club Library</h1>
+  <div id="content">
+    <div class="user">
+      <% @members.each do |member| %>
+      <h3 class="book-owned"><%=h member.name %></h3>
+      <ul class="books-owned">
+        <% member.books.each do |book| %>
+          <li><%= book.title %></li>
+        <% end %>
+      </ul>
+      <% end %>
+    </div>
+  </div>
+
+<!-- 
+
+
+
+
+  <% @members.each do |member| %>
+    <tr>
+      <td><%=h member.name %></td>
+      <td><%=h member.contact %></td>
+      <td><%= link_to 'Show', member %></td>
+      <td><%= link_to 'Edit', edit_member_path(member) %></td>
+      <td><%= link_to 'Destroy', member, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+  </table>
+
+<br />
+
+<%= link_to 'New member', new_member_path %> -->
