@@ -2,7 +2,7 @@
   <div id="content">
     <div class="user">
       <% @members.each do |member| %>
-      <h3 class="book-owned"><%=h member.name %></h3>
+      <h3 class="book-owner"><%=h member.name %></h3>
       <ul class="books-owned">
         <% member.books.each do |book| %>
           <li><%= book.title %></li>
