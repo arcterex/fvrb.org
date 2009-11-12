@@ -1,5 +1,6 @@
 class MembersController < ApplicationController
-  before_filter :authenticate
+  before_filter :authorize #, :except => [:index, :show ]    
+
   # GET /members
   # GET /members.xml
   def index
