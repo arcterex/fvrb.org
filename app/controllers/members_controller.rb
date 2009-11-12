@@ -1,4 +1,5 @@
 class MembersController < ApplicationController
+  before_filter :authenticate
   # GET /members
   # GET /members.xml
   def index
@@ -80,6 +81,13 @@ class MembersController < ApplicationController
     respond_to do |format|
       format.html { redirect_to(members_url) }
       format.xml  { head :ok }
+    end
+  end
+
+  protected
+  def authenticate
+    authenticate_or_request_with_http_basic do |username,password|
+      username == "admin" && password == "fvrb.org"
     end
   end
 end

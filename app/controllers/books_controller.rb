@@ -1,4 +1,6 @@
 class BooksController < ApplicationController
+  before_filter :authenticate
+  
   # GET /books
   # GET /books.xml
   def index
@@ -82,6 +84,13 @@ class BooksController < ApplicationController
     respond_to do |format|
       format.html { redirect_to(books_url) }
       format.xml  { head :ok }
+    end
+  end
+
+  protected
+  def authenticate
+    authenticate_or_request_with_http_basic do |username,password|
+      username == "admin" && password == "fvrb.org"
     end
   end
 end
