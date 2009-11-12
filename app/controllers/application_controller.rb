@@ -11,7 +11,7 @@ class ApplicationController < ActionController::Base
   helper_method :admin?
   protected
   def admin?
-    false
+    session[:password] == "fvrb.org"
   end
 
   def authorize  
