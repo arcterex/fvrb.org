@@ -22,8 +22,8 @@
   </div><!-- /#header -->
   
   <div id="content">
-  <p style="color: green"><%= flash[:notice] %></p>
-  <p style="color: red"><%= flash[:error] %></p>
+  <p class="success"><%= flash[:notice] %></p>
+  <p class="failure"><%= flash[:error] %></p>
     
   <%= yield %>
   </div><!-- /#content -->
