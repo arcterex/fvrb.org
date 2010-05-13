@@ -1,0 +1,21 @@
+<h1>News</h1>
+
+<div id="content">
+  <% @posts.each do |post| %>
+    <div id="post">
+      <h3 class="post_title"><%= link_to post.title, post %></h3>
+      <div class="post_body">
+        <%=h post.body %>
+      </div><!-- end post_body -->
+    </div><!-- end post -->
+    <% if admin? %>
+      <p><%= link_to 'Edit', edit_post_path(post) %></p>
+    <% end %>
+  <% end %>
+<div class="clear"></div>    
+</div>
+
+<br />
+<% if admin? %>
+<%= link_to 'New post', new_post_path %>
+<% end %>
